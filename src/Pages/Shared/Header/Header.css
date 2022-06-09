@@ -1,0 +1,22 @@
+.navMenu a{
+    float: left;
+    display: block;
+    text-align: center;
+    padding: 2px 10px;
+    border-radius: 5px;
+    margin: 0 10px;
+}
+.logo{
+    border: 1px solid white;
+    border-radius: 50%;
+}
+.title-green{
+    font-size: x-large;
+    font-weight: 700;
+    color: green;
+}
+.title-red{
+    font-size: large;
+    font-weight: 700;
+    color: red;
+}
