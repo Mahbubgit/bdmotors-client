@@ -14,62 +14,62 @@ const Footer = () => {
                     {/* <!-- Section: Social media --> */}
                     <section className="mb-4">
                         {/* <!-- Facebook --> */}
-                        <a className="btn btn-outline-light btn-floating m-1" 
-                        href="https://www.facebook.com/" 
-                        target="_blank" 
-                        rel="noreferrer" 
-                        role="button"
-                        title='facebook'
+                        <a className="btn btn-outline-light btn-floating m-1"
+                            href="https://www.facebook.com/"
+                            target="_blank"
+                            rel="noreferrer"
+                            role="button"
+                            title='facebook'
                         ><i className="fab fa-facebook-f"></i
                         ></a>
 
                         {/* <!-- Twitter --> */}
-                        <a className="btn btn-outline-light btn-floating m-1" 
-                        href="https://twitter.com/" 
-                        target="_blank" 
-                        rel="noreferrer" 
-                        role="button"
-                        title='twitter'
+                        <a className="btn btn-outline-light btn-floating m-1"
+                            href="https://twitter.com/"
+                            target="_blank"
+                            rel="noreferrer"
+                            role="button"
+                            title='twitter'
                         ><i className="fab fa-twitter"></i
                         ></a>
 
                         {/* <!-- Google --> */}
-                        <a className="btn btn-outline-light btn-floating m-1" 
-                        href="https://www.google.com/" 
-                        target="_blank" 
-                        rel="noreferrer" 
-                        role="button"
-                        title='google'
+                        <a className="btn btn-outline-light btn-floating m-1"
+                            href="https://www.google.com/"
+                            target="_blank"
+                            rel="noreferrer"
+                            role="button"
+                            title='google'
                         ><i className="fab fa-google"></i
                         ></a>
 
                         {/* <!-- Instagram --> */}
-                        <a className="btn btn-outline-light btn-floating m-1" 
-                        href="https://www.instagram.com/" 
-                        target="_blank" 
-                        rel="noreferrer" 
-                        role="button"
-                        title='instagram'
+                        <a className="btn btn-outline-light btn-floating m-1"
+                            href="https://www.instagram.com/"
+                            target="_blank"
+                            rel="noreferrer"
+                            role="button"
+                            title='instagram'
                         ><i className="fab fa-instagram"></i
                         ></a>
 
                         {/* <!-- Linkedin --> */}
-                        <a className="btn btn-outline-light btn-floating m-1" 
-                        href="https://bd.linkedin.com/" 
-                        target="_blank" 
-                        rel="noreferrer" 
-                        role="button"
-                        title='linkedin'
+                        <a className="btn btn-outline-light btn-floating m-1"
+                            href="https://bd.linkedin.com/"
+                            target="_blank"
+                            rel="noreferrer"
+                            role="button"
+                            title='linkedin'
                         ><i className="fab fa-linkedin-in"></i
                         ></a>
 
                         {/* <!-- Github --> */}
-                        <a className="btn btn-outline-light btn-floating m-1" 
-                        href="https://github.com/" 
-                        target="_blank" 
-                        rel="noreferrer" 
-                        role="button"
-                        title='github'
+                        <a className="btn btn-outline-light btn-floating m-1"
+                            href="https://github.com/"
+                            target="_blank"
+                            rel="noreferrer"
+                            role="button"
+                            title='github'
                         ><i className="fab fa-github"></i
                         ></a>
                     </section>
@@ -83,7 +83,9 @@ const Footer = () => {
 
                             {/* <!--Grid column--> */}
                             <div className="col-lg-4 col-md-6 mb-4 mb-md-0">
-                                <h5 className="text-uppercase">About BDMOTORS</h5>
+                                <h5 className="text-uppercase">
+                                    About <span className='title-green'>BD</span><span className='title-red'>MOTORS</span>
+                                </h5>
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit maiores alias sapiente, delectus ratione neque eos, aliquid consectetur possimus, quisquam dolor. Magni eligendi ducimus deserunt vel amet! Sequi doloremque tenetur esse laborum sapiente? Cupiditate alias maxime optio labore enim totam eius hic, impedit error fugiat modi eos ab tenetur iusto.</p>
                             </div>
                             {/* <!--Grid column--> */}
@@ -132,10 +134,10 @@ const Footer = () => {
                 </div>
                 {/* <!-- Grid container --> */}
 
-                {/* <!-- Copyright --> className="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);" */}
+                {/* <!-- Copyright --> */}
                 <div className='text-center p-3 bg-secondary text-white' >
-                    <img src={copyright} alt="copyright" width={25} />
-                    {year} Copyright -  <span>BDMOTORS</span> - <small>All Right Reserve</small>
+                    Copyright <img src={copyright} alt="copyright" width={25} />
+                    {year} <span>  <span className='title-green'>BD</span><span className='title-red'>MOTORS</span> ,   <small className="text-uppercase">All Rights Reserved</small></span>
                 </div>
                 {/* <!-- Copyright --> */}
             </footer>
