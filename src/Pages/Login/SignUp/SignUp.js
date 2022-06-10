@@ -83,7 +83,7 @@ const SignUp = () => {
             </Form>
             {/* {errorElement} */}
             <p className='text-center mb-0'>
-                Already have an account in <span className='title-green'>BD</span><span className='title-red'>MOTORS? </span>
+                Already on <span className='title-green'>BD</span><span className='title-red'>MOTORS? </span>
                 <Link to={'/login'} className='text-primary pe-auto text-decoration-none' onClick={navigateLogin}>Please Login</Link>
             </p>
             <SocialLogin></SocialLogin>
