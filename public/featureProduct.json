@@ -1,66 +1,66 @@
 [
     {
         "id": 1,
-        "name": "Name 1",
-        "stock": "5",
-        "price": "5000",
-        "description": "Description of item 1",
+        "name": "TROUSER-PANT-FRONT",
+        "stock": "12",
+        "price": "5,000 BDT",
+        "description": "Comfortable trouser pant front side image.",
         "img": "https://i.ibb.co/ZgQhVZJ/pant-front.jpg"
     },
     {
         "id": 2,
-        "name": "Name 2",
+        "name": "TROUSER-PANT-BACK",
         "stock": "12",
-        "price": "2500",
-        "description": "Description of item 2",
+        "price": "5,000 BDT",
+        "description": "Comfortable trouser pant back side image.",
         "img": "https://i.ibb.co/vdNc9kz/pant-back.jpg"
     },
     {
         "id": 3,
-        "name": "Name 3",
+        "name": "KNEE-BRACES",
         "stock": "15",
-        "price": "4200",
-        "description": "Description of item 3",
+        "price": "4,200 BDT",
+        "description": "Safe guard knee braces image.",
         "img": "https://i.ibb.co/dj99Lzb/knee-braces.jpg"
     },
     {
         "id": 4,
-        "name": "Name 4",
-        "stock": "10",
-        "price": "3500",
-        "description": "Description of item 4",
+        "name": "JACKET-FRONT",
+        "stock": "15",
+        "price": "4,500 BDT",
+        "description": "Comfortable jacket front side image.",
         "img": "https://i.ibb.co/NmzjFBD/jacket-front.jpg"
     },
     {
         "id": 5,
-        "name": "Name 5",
+        "name": "JACKET-BACK",
         "stock": "15",
-        "price": "4500",
-        "description": "Description of item 5",
+        "price": "4,500 BDT",
+        "description": "Comfortable jacket back side image.",
         "img": "https://i.ibb.co/12Grxhr/jacket-back.jpg"
     },
     {
         "id": 6,
-        "name": "Name 6",
+        "name": "HELMET",
         "stock": "30",
-        "price": "2200",
-        "description": "Description of item 6",
+        "price": "7,000 BDT",
+        "description": "Safe guard helmet image.",
         "img": "https://i.ibb.co/sq9jjCQ/helmet.jpg"
     },
     {
         "id": 7,
-        "name": "Name 7",
+        "name": "FOX-DIRTPAW",
         "stock": "22",
-        "price": "2500",
-        "description": "Description of item 7",
+        "price": "8,500 BDT",
+        "description": "Fox dirtpaw image.",
         "img": "https://i.ibb.co/yQ1DYss/fox-dirtpaw.jpg"
     },
     {
         "id": 8,
-        "name": "Name 8",
+        "name": "BOOTS-GREEN",
         "stock": "25",
-        "price": "3000",
-        "description": "Description of item 8",
+        "price": "7,500 BDT",
+        "description": "Safe guard boots green color image.",
         "img": "https://i.ibb.co/rknb65s/boots-green.jpg"
     }
 ]

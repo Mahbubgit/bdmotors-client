@@ -29,7 +29,6 @@ const Header = () => {
                     </Nav>
                     <Nav className='navMenu'>
                         <CustomLink to={'/login'}>LOGIN</CustomLink>
-                        <CustomLink to={'/signup'}>SIGN UP</CustomLink>
                     </Nav>
                 </Navbar.Collapse>
             </Container>

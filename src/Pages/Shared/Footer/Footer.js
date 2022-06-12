@@ -86,13 +86,13 @@ const Footer = () => {
                                 <h5 className="text-uppercase">
                                     About <span className='title-green'>BD</span><span className='title-red'>MOTORS</span>
                                 </h5>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit maiores alias sapiente, delectus ratione neque eos, aliquid consectetur possimus, quisquam dolor. Magni eligendi ducimus deserunt vel amet! Sequi doloremque tenetur esse laborum sapiente? Cupiditate alias maxime optio labore enim totam eius hic, impedit error fugiat modi eos ab tenetur iusto.</p>
+                                <p>If you are looking for the smoothest way to reach the top speed in front of your competitors, you’re in the right place. Welcome to BDMOTORS.</p>
                             </div>
                             {/* <!--Grid column--> */}
 
                             {/* <!--Grid column--> */}
                             <div className="col-lg-4 col-md-6 mb-4 mb-md-0">
-                                <h5 className="text-uppercase">Link</h5>
+                                <h5 className="text-uppercase">Quick Links</h5>
 
                                 <ul className="list-unstyled mb-0">
                                     <li>
@@ -116,14 +116,14 @@ const Footer = () => {
 
                             {/* <!--Grid column--> */}
                             <div className="col-lg-4 col-md-6 mb-4 mb-md-0">
-                                <h5 className="text-uppercase">Contact</h5>
+                                <h5 className="text-uppercase">Contact Us</h5>
                                 <p>01712552255</p>
-                                <h5 className="text-uppercase">Address</h5>
-                                <p>Dhaka, Bangladesh</p>
+                                <h5 className="text-uppercase">HEAD OFFICE</h5>
+                                <p>BDMOTORS, Tejgaon, Dhaka-1208, Bangladesh.</p>
                                 <h5 className="text-uppercase">Phone</h5>
-                                <p>02668855</p>
+                                <p>+88-02-668855</p>
                                 <h5 className="text-uppercase">Email</h5>
-                                <p>bdmotors@gmail.com</p>
+                                <p>supportbdmotors@gmail.com</p>
 
                             </div>
                             {/* <!--Grid column--> */}

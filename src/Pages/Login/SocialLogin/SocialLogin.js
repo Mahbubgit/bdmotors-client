@@ -35,7 +35,7 @@ const SocialLogin = () => {
                     className='btn btn-secondary w-50 d-flex mx-auto my-auto'>
                     <div className='mx-auto d-flex'>
                         <img className='ms-auto' style={{ width: "30px", height: "30px" }} src={googleImg} alt="" />
-                        <span className='mx-1'>Google Sign In</span>
+                        <span className='mx-1'>Sign in with Google</span>
                     </div>
                 </button>
             </div>

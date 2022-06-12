@@ -10,7 +10,7 @@ const FeatureProduct = ({ product }) => {
                 <h2>{name}</h2>
                 <p>
                     Stock: {stock} <br />
-                    Price: {price}/= Taka <br />
+                    Price: {price} <br />
                     <small>
                         {description}
                     </small>

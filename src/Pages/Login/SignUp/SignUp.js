@@ -54,7 +54,8 @@ const SignUp = () => {
         <div className='container w-50 mx-auto loginArea'>
 
             <Form onSubmit={handleSignUp} className='loginForm'>
-                <h2 className='text-secondary text-center'>Please Sign Up</h2>
+                {/* <h2 className='text-secondary text-center'>Join to</h2> */}
+                <p className='h2 mb-0 text-center text-secondary mb-2'>Join to <span className='title-green'>BD</span><span className='title-red'>MOTORS </span></p>
 
                 <Row className="mb-3">
                     <Form.Group as={Col} controlId="formBasicName">
@@ -83,8 +84,8 @@ const SignUp = () => {
             </Form>
             {/* {errorElement} */}
             <p className='text-center mb-0'>
-                Already on <span className='title-green'>BD</span><span className='title-red'>MOTORS? </span>
-                <Link to={'/login'} className='text-primary pe-auto text-decoration-none' onClick={navigateLogin}>Please Login</Link>
+            Have an account already?
+                <Link to={'/login'} className='text-primary pe-auto text-decoration-none ms-2' onClick={navigateLogin}>Log in</Link>
             </p>
             <SocialLogin></SocialLogin>
         </div>

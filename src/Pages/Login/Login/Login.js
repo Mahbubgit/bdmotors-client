@@ -4,7 +4,6 @@ import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
 import { useRef } from 'react';
 import './Login.css';
-import Card from 'react-bootstrap/Card';
 import { Link, useNavigate } from 'react-router-dom';
 import SocialLogin from './../SocialLogin/SocialLogin';
 import { useSendPasswordResetEmail, useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
@@ -53,7 +52,7 @@ const Login = () => {
         <div className='container w-50 mx-auto loginArea'>
             <Form onSubmit={handleSubmit} className='loginForm'>
                 {/* <PageTitle title="Login"></PageTitle> */}
-                <h2 className='text-secondary text-center'>Please Login</h2>
+                <p className='h2 mb-0 text-secondary text-center mb-2'>Login to <span className='title-green'>BD</span><span className='title-red'>MOTORS </span></p>
                 <Row className="mb-3">
                     <Form.Group as={Col} controlId="formGridEmail">
                         <Form.Control ref={emailRef} type="email" placeholder="Enter email" required />
@@ -71,8 +70,8 @@ const Login = () => {
             </Form>
 
             {/* {errorElement} */}
-            <p className='mb-0'>New to <span className='title-green'>BD</span><span className='title-red'>MOTORS? </span>
-                <Link to="/signup" className='text-primary pe-auto text-decoration-none' onClick={navigateToSignUp}>Please Sign Up</Link> </p>
+            <p className='mb-0'>Don't have an account?
+                <Link to="/signup" className='text-primary pe-auto text-decoration-none ms-2' onClick={navigateToSignUp}>Sign Up</Link> </p>
             <p className='mb-0'>Forget Password?<button className='btn btn-link text-primary pe-auto text-decoration-none' onClick={resetPassword}>Reset Password</button> </p>
             <SocialLogin></SocialLogin>
         </div>
