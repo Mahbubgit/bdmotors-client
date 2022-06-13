@@ -1,24 +1,19 @@
-import React, { useEffect, useState } from 'react';
+import useItems from '../../hooks/useItems';
 import Item from '../Item/Item';
 import './Items.css';
 
-const Items = () => {
-    const [items, setItems] = useState([]);
-
-    useEffect(() => {
-        fetch('items.json')
-            .then(res => res.json())
-            .then(data => setItems(data));
-    }, [])
+const Items = ({ homePage }) => {
+    const [items] = useItems();
+    
     return (
         <div className='container'>
-            <h1>Warehouse Management System</h1>
-            <h3 className='product-title text-secondary text-center mt-3'>Our Products</h3>
+            <h1 className='product-title text-secondary text-center mt-3'>Our Items</h1>
             <div className="product-container">
                 {
                     items.map(item => <Item
-                        key={item.id}
+                        key={item._id}
                         item={item}
+                        homePage={homePage}
                     ></Item>)
                 }
             </div>

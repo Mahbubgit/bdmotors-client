@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import FeatureProduct from '../FeatureProduct/FeatureProduct';
 
-const FeatureProducts = () => {
+const FeatureProducts = ({ homePage }) => {
     const [featureProduct, setFeatureProduct] = useState([]);
     useEffect(() => {
         fetch('featureProduct.json')
@@ -11,12 +11,13 @@ const FeatureProducts = () => {
 
     return (
         <div className='container'>
-            <h3 className='product-title text-secondary text-center mt-3'>Featured Products</h3>
+            <h1 className='product-title text-secondary text-center mt-3'>Featured Products</h1>
             <div className="product-container">
                 {
                     featureProduct.map(product => <FeatureProduct
                         key={product.id}
                         product={product}
+                        homePage={homePage}
                     ></FeatureProduct>)
                 }
             </div>

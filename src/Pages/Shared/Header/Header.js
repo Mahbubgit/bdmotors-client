@@ -4,8 +4,15 @@ import {Container, Nav} from 'react-bootstrap';
 import logo from './../../../Images/logo.jpg';
 import './Header.css';
 import CustomLink from '../CustomLink/CustomLink';
+import { useAuthState } from 'react-firebase-hooks/auth';
+import auth from '../../../firebase.init';
+import { signOut } from 'firebase/auth';
 
 const Header = () => {
+    const [user] = useAuthState(auth);
+    const handleLogOut = () =>{
+        signOut(auth);
+    }
     return (
         <Navbar 
         collapseOnSelect 
@@ -28,7 +35,17 @@ const Header = () => {
                         <CustomLink to={'/about'} >ABOUT</CustomLink>
                     </Nav>
                     <Nav className='navMenu'>
-                        <CustomLink to={'/login'}>LOGIN</CustomLink>
+                        {
+                            user ? 
+                            <>
+                            <CustomLink to={'/items'}>MANAGE INVENTORIES</CustomLink>
+                            <CustomLink to={'/addItem'}>ADD ITEM</CustomLink>
+                            <CustomLink to={'/myItem'}>MY ITEM</CustomLink>
+                            <CustomLink to={'/login'} className='bg-danger text-white' onClick={handleLogOut} >LOG OUT</CustomLink>
+                            </>
+                            :
+                            <CustomLink to={'/login'}>LOGIN</CustomLink>
+                        }
                     </Nav>
                 </Navbar.Collapse>
             </Container>

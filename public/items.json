@@ -1,7 +1,8 @@
 [
     {
         "id": 1,
-        "name": "HONDA GSX-R150 TWIN DISC",
+        "name": "Scout Bobber Sixty Motorcycle",
+        "slno":1,
         "quantity": "25",
         "price": "452,950 BDT",
         "supplier": "Bajaj Auto Ltd.",
@@ -10,7 +11,8 @@
     },
     {
         "id": 2,
-        "name": "HONDA GSX-R150 TWIN DISC",
+        "name": "Honda RC1000V- Supersports Bike",
+        "slno":2,
         "quantity": "15",
         "price": "495,950 BDT",
         "supplier": "Bajaj Auto Ltd.",
@@ -19,7 +21,8 @@
     },
     {
         "id": 3,
-        "name": "HONDA GSX-R150 TWIN DISC",
+        "name": "Honda GSX-R150 Twin Disc",
+        "slno":3,
         "quantity": "12",
         "price": "485,950 BDT",
         "supplier": "Lumax Industray and Commerce Co. Ltd.",
@@ -28,7 +31,8 @@
     },
     {
         "id": 4,
-        "name": "HONDA GSX-R150 TWIN DISC",
+        "name": "Ducati's Panigale V2",
+        "slno":4,
         "quantity": "5",
         "price": "485,950 BDT",
         "supplier": "Wuxi Stanford Vehicle Tech Co. Ltd.",
@@ -37,7 +41,8 @@
     },
     {
         "id": 5,
-        "name": "HONDA GSX-R150 TWIN DISC",
+        "name": "Ducati's Panigale V2",
+        "slno":5,
         "quantity": "14",
         "price": "620,950 BDT",
         "supplier": "Lumax Industray and Commerce Co. Ltd.",
@@ -46,7 +51,8 @@
     },
     {
         "id": 6,
-        "name": "HONDA GSX-R150 TWIN DISC",
+        "name": "Ducati's Panigale V2",
+        "slno":6,
         "quantity": "10",
         "price": "456,950 BDT",
         "supplier": "Bajaj Auto Ltd.",
@@ -55,7 +61,8 @@
     },
     {
         "id": 7,
-        "name": "HONDA GSX-R150 TWIN DISC",
+        "name": "Ducati's Panigale V2",
+        "slno":7,
         "quantity": "15",
         "price": "550,950 BDT",
         "supplier": "Lumax Industray and Commerce Co. Ltd.",
@@ -64,7 +71,8 @@
     },
     {
         "id": 8,
-        "name": "HONDA GSX-R150 TWIN DISC",
+        "name": "Honda RC1000V- Supersports Bike",
+        "slno":8,
         "quantity": "20",
         "price": "475,950 BDT",
         "supplier": "Wuxi Stanford Vehicle Tech Co. Ltd.",
@@ -73,7 +81,8 @@
     },
     {
         "id": 9,
-        "name": "HONDA GSX-R150 TWIN DISC",
+        "name": "Honda GSX-R150 Twin Disc",
+        "slno":9,
         "quantity": "12",
         "price": "495,950 BDT",
         "supplier": "Bajaj Auto Ltd.",
@@ -82,7 +91,8 @@
     },
     {
         "id": 10,
-        "name": "HONDA GSX-R150 TWIN DISC",
+        "name": "Ducati's Panigale V2",
+        "slno":10,
         "quantity": "10",
         "price": "425,950 BDT",
         "supplier": "Wuxi Stanford Vehicle Tech Co. Ltd.",

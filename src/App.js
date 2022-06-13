@@ -10,6 +10,11 @@ import FeatureProducts from './Pages/FeatureProducts/FeatureProducts';
 import Login from './Pages/Login/Login/Login';
 import SignUp from './Pages/Login/SignUp/SignUp';
 import NotFound from './Pages/NotFound/NotFound';
+import AddItem from './Pages/AddItem/AddItem';
+import MyItem from './Pages/MyItem/MyItem';
+import Items from './Pages/Items/Items';
+import RequireAuth from './Pages/Login/RequireAuth/RequireAuth';
+import ItemDetail from './Pages/ItemDetail/ItemDetail';
 
 function App() {
   return (
@@ -25,7 +30,25 @@ function App() {
         <Route path='/featuredProduct' element={<FeatureProducts></FeatureProducts>}></Route>
         <Route path='/login' element={<Login></Login>}></Route>
         <Route path='/signup' element={<SignUp></SignUp>}></Route>
+        <Route path='/inventory/:id' element={<ItemDetail></ItemDetail>}></Route>
         <Route path='/blogs' element={<Blogs></Blogs>}></Route>
+        <Route path='/items' element={<Items></Items>}></Route>
+        {/* <Route path='/item/:id' element={
+          <RequireAuth>
+            <ItemDetail></ItemDetail>
+          </RequireAuth>
+        }></Route> */}
+        <Route path='/addItem' element={
+          <RequireAuth>
+            <AddItem></AddItem>
+          </RequireAuth>
+        }></Route>
+        <Route path='/myItem' element={
+          <RequireAuth>
+            <MyItem></MyItem>
+          </RequireAuth>
+        }></Route>
+
         <Route path='*' element={<NotFound></NotFound>}></Route>
       </Routes>
       <Footer></Footer>

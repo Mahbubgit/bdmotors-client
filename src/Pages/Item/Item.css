@@ -4,6 +4,13 @@
     margin: 10px;
     padding: 10px;
     text-align: center;
+    height: auto;
+}
+.product-details{
+    height: 93%;
+}
+.product-button{
+    height: 7%;
 }
 .image{
     border: 1px solid gray;
