@@ -1,0 +1,33 @@
+.pagination{
+    padding: 20px;
+    margin: 10px 500px;
+}
+.pagination button{
+
+    margin-right: 15px;
+    border: 1px solid gray;
+    border-radius: 2px;
+    background-color: white;
+    color: green;
+
+}
+
+.pagination .selected{
+    background-color: green;
+    color: white;
+}
+
+/* make products responsive */
+@media only screen and (max-width:576px) {
+    .pagination{
+        padding: 20px;
+        margin: 10px 100px;
+    }
+}
+
+@media only screen and (min-width: 577px) and (max-width: 992px) {
+    .pagination{
+        padding: 20px;
+        margin: 10px 300px;
+    }
+} 

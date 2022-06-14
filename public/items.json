@@ -1,8 +1,7 @@
 [
     {
-        "id": 1,
         "name": "Scout Bobber Sixty Motorcycle",
-        "slno":1,
+        "sl":1,
         "quantity": "25",
         "price": "452,950 BDT",
         "supplier": "Bajaj Auto Ltd.",
@@ -10,9 +9,8 @@
         "img": "https://i.ibb.co/1RvQ4MT/1.jpg"
     },
     {
-        "id": 2,
         "name": "Honda RC1000V- Supersports Bike",
-        "slno":2,
+        "sl":2,
         "quantity": "15",
         "price": "495,950 BDT",
         "supplier": "Bajaj Auto Ltd.",
@@ -20,9 +18,8 @@
         "img": "https://i.ibb.co/qDb4JCy/2.jpg"
     },
     {
-        "id": 3,
         "name": "Honda GSX-R150 Twin Disc",
-        "slno":3,
+        "sl":3,
         "quantity": "12",
         "price": "485,950 BDT",
         "supplier": "Lumax Industray and Commerce Co. Ltd.",
@@ -30,9 +27,8 @@
         "img": "https://i.ibb.co/nDbdmN6/3.jpg"
     },
     {
-        "id": 4,
         "name": "Ducati's Panigale V2",
-        "slno":4,
+        "sl":4,
         "quantity": "5",
         "price": "485,950 BDT",
         "supplier": "Wuxi Stanford Vehicle Tech Co. Ltd.",
@@ -40,9 +36,8 @@
         "img": "https://i.ibb.co/G5rPM6G/4.jpg"
     },
     {
-        "id": 5,
         "name": "Ducati's Panigale V2",
-        "slno":5,
+        "sl":5,
         "quantity": "14",
         "price": "620,950 BDT",
         "supplier": "Lumax Industray and Commerce Co. Ltd.",
@@ -50,9 +45,8 @@
         "img": "https://i.ibb.co/X55fY0w/5.jpg"
     },
     {
-        "id": 6,
         "name": "Ducati's Panigale V2",
-        "slno":6,
+        "sl":6,
         "quantity": "10",
         "price": "456,950 BDT",
         "supplier": "Bajaj Auto Ltd.",
@@ -60,9 +54,8 @@
         "img": "https://i.ibb.co/VjDRVhg/6.jpg"
     },
     {
-        "id": 7,
         "name": "Ducati's Panigale V2",
-        "slno":7,
+        "sl":7,
         "quantity": "15",
         "price": "550,950 BDT",
         "supplier": "Lumax Industray and Commerce Co. Ltd.",
@@ -70,9 +63,8 @@
         "img": "https://i.ibb.co/nncdL2K/7.jpg"
     },
     {
-        "id": 8,
         "name": "Honda RC1000V- Supersports Bike",
-        "slno":8,
+        "sl":8,
         "quantity": "20",
         "price": "475,950 BDT",
         "supplier": "Wuxi Stanford Vehicle Tech Co. Ltd.",
@@ -80,9 +72,8 @@
         "img": "https://i.ibb.co/BV9G8gH/8.jpg"
     },
     {
-        "id": 9,
         "name": "Honda GSX-R150 Twin Disc",
-        "slno":9,
+        "sl":9,
         "quantity": "12",
         "price": "495,950 BDT",
         "supplier": "Bajaj Auto Ltd.",
@@ -90,9 +81,206 @@
         "img": "https://i.ibb.co/DLSZ8Xt/9.jpg"
     },
     {
-        "id": 10,
         "name": "Ducati's Panigale V2",
-        "slno":10,
+        "sl":10,
+        "quantity": "10",
+        "price": "425,950 BDT",
+        "supplier": "Wuxi Stanford Vehicle Tech Co. Ltd.",
+        "description": "The best-in-class power from a 160cc Twin Spark DTS-i engine, with twin disc brakes, wider wheels & quick single channel  that make challenges to go fast.",
+        "img": "https://i.ibb.co/hKXngGG/10.jpg"
+    },
+    {
+        "name": "Scout Bobber Sixty Motorcycle",
+        "sl":11,
+        "quantity": "25",
+        "price": "452,950 BDT",
+        "supplier": "Bajaj Auto Ltd.",
+        "description": "The best-in-class power from a 160cc Twin Spark DTS-i engine, with twin disc brakes, wider wheels & quick single channel  that make challenges to go fast.",
+        "img": "https://i.ibb.co/1RvQ4MT/1.jpg"
+    },
+    {
+        "name": "Honda RC1000V- Supersports Bike",
+        "sl":12,
+        "quantity": "15",
+        "price": "495,950 BDT",
+        "supplier": "Bajaj Auto Ltd.",
+        "description": "The best-in-class power from a 160cc Twin Spark DTS-i engine, with twin disc brakes, wider wheels & quick single channel  that make challenges to go fast.",
+        "img": "https://i.ibb.co/qDb4JCy/2.jpg"
+    },
+    {
+        "name": "Honda GSX-R150 Twin Disc",
+        "sl":13,
+        "quantity": "12",
+        "price": "485,950 BDT",
+        "supplier": "Lumax Industray and Commerce Co. Ltd.",
+        "description": "The best-in-class power from a 160cc Twin Spark DTS-i engine, with twin disc brakes, wider wheels & quick single channel  that make challenges to go fast.",
+        "img": "https://i.ibb.co/nDbdmN6/3.jpg"
+    },
+    {
+        "name": "Ducati's Panigale V2",
+        "sl":14,
+        "quantity": "5",
+        "price": "485,950 BDT",
+        "supplier": "Wuxi Stanford Vehicle Tech Co. Ltd.",
+        "description": "The best-in-class power from a 160cc Twin Spark DTS-i engine, with twin disc brakes, wider wheels & quick single channel  that make challenges to go fast.",
+        "img": "https://i.ibb.co/G5rPM6G/4.jpg"
+    },
+    {
+        "name": "Ducati's Panigale V2",
+        "sl":15,
+        "quantity": "14",
+        "price": "620,950 BDT",
+        "supplier": "Lumax Industray and Commerce Co. Ltd.",
+        "description": "The best-in-class power from a 160cc Twin Spark DTS-i engine, with twin disc brakes, wider wheels & quick single channel  that make challenges to go fast.",
+        "img": "https://i.ibb.co/X55fY0w/5.jpg"
+    },
+    {
+        "name": "Ducati's Panigale V2",
+        "sl":16,
+        "quantity": "10",
+        "price": "456,950 BDT",
+        "supplier": "Bajaj Auto Ltd.",
+        "description": "The best-in-class power from a 160cc Twin Spark DTS-i engine, with twin disc brakes, wider wheels & quick single channel  that make challenges to go fast.",
+        "img": "https://i.ibb.co/VjDRVhg/6.jpg"
+    },
+    {
+        "name": "Ducati's Panigale V2",
+        "sl":17,
+        "quantity": "15",
+        "price": "550,950 BDT",
+        "supplier": "Lumax Industray and Commerce Co. Ltd.",
+        "description": "The best-in-class power from a 160cc Twin Spark DTS-i engine, with twin disc brakes, wider wheels & quick single channel  that make challenges to go fast.",
+        "img": "https://i.ibb.co/nncdL2K/7.jpg"
+    },
+    {
+        "name": "Honda RC1000V- Supersports Bike",
+        "sl":18,
+        "quantity": "20",
+        "price": "475,950 BDT",
+        "supplier": "Wuxi Stanford Vehicle Tech Co. Ltd.",
+        "description": "The best-in-class power from a 160cc Twin Spark DTS-i engine, with twin disc brakes, wider wheels & quick single channel  that make challenges to go fast.",
+        "img": "https://i.ibb.co/BV9G8gH/8.jpg"
+    },
+    {
+        "name": "Honda GSX-R150 Twin Disc",
+        "sl":19,
+        "quantity": "12",
+        "price": "495,950 BDT",
+        "supplier": "Bajaj Auto Ltd.",
+        "description": "The best-in-class power from a 160cc Twin Spark DTS-i engine, with twin disc brakes, wider wheels & quick single channel  that make challenges to go fast.",
+        "img": "https://i.ibb.co/DLSZ8Xt/9.jpg"
+    },
+    {
+        "name": "Ducati's Panigale V2",
+        "sl":20,
+        "quantity": "10",
+        "price": "425,950 BDT",
+        "supplier": "Wuxi Stanford Vehicle Tech Co. Ltd.",
+        "description": "The best-in-class power from a 160cc Twin Spark DTS-i engine, with twin disc brakes, wider wheels & quick single channel  that make challenges to go fast.",
+        "img": "https://i.ibb.co/hKXngGG/10.jpg"
+    },
+    {
+        "name": "Scout Bobber Sixty Motorcycle",
+        "sl":21,
+        "quantity": "25",
+        "price": "452,950 BDT",
+        "supplier": "Bajaj Auto Ltd.",
+        "description": "The best-in-class power from a 160cc Twin Spark DTS-i engine, with twin disc brakes, wider wheels & quick single channel  that make challenges to go fast.",
+        "img": "https://i.ibb.co/1RvQ4MT/1.jpg"
+    },
+    {
+        "name": "Honda RC1000V- Supersports Bike",
+        "sl":22,
+        "quantity": "15",
+        "price": "495,950 BDT",
+        "supplier": "Bajaj Auto Ltd.",
+        "description": "The best-in-class power from a 160cc Twin Spark DTS-i engine, with twin disc brakes, wider wheels & quick single channel  that make challenges to go fast.",
+        "img": "https://i.ibb.co/qDb4JCy/2.jpg"
+    },
+    {
+        "name": "Honda GSX-R150 Twin Disc",
+        "sl":23,
+        "quantity": "12",
+        "price": "485,950 BDT",
+        "supplier": "Lumax Industray and Commerce Co. Ltd.",
+        "description": "The best-in-class power from a 160cc Twin Spark DTS-i engine, with twin disc brakes, wider wheels & quick single channel  that make challenges to go fast.",
+        "img": "https://i.ibb.co/nDbdmN6/3.jpg"
+    },
+    {
+        "name": "Ducati's Panigale V2",
+        "sl":24,
+        "quantity": "5",
+        "price": "485,950 BDT",
+        "supplier": "Wuxi Stanford Vehicle Tech Co. Ltd.",
+        "description": "The best-in-class power from a 160cc Twin Spark DTS-i engine, with twin disc brakes, wider wheels & quick single channel  that make challenges to go fast.",
+        "img": "https://i.ibb.co/G5rPM6G/4.jpg"
+    },
+    {
+        "name": "Ducati's Panigale V2",
+        "sl":25,
+        "quantity": "14",
+        "price": "620,950 BDT",
+        "supplier": "Lumax Industray and Commerce Co. Ltd.",
+        "description": "The best-in-class power from a 160cc Twin Spark DTS-i engine, with twin disc brakes, wider wheels & quick single channel  that make challenges to go fast.",
+        "img": "https://i.ibb.co/X55fY0w/5.jpg"
+    },
+    {
+        "name": "Ducati's Panigale V2",
+        "sl":26,
+        "quantity": "10",
+        "price": "456,950 BDT",
+        "supplier": "Bajaj Auto Ltd.",
+        "description": "The best-in-class power from a 160cc Twin Spark DTS-i engine, with twin disc brakes, wider wheels & quick single channel  that make challenges to go fast.",
+        "img": "https://i.ibb.co/VjDRVhg/6.jpg"
+    },
+    {
+        "name": "Ducati's Panigale V2",
+        "sl":27,
+        "quantity": "15",
+        "price": "550,950 BDT",
+        "supplier": "Lumax Industray and Commerce Co. Ltd.",
+        "description": "The best-in-class power from a 160cc Twin Spark DTS-i engine, with twin disc brakes, wider wheels & quick single channel  that make challenges to go fast.",
+        "img": "https://i.ibb.co/nncdL2K/7.jpg"
+    },
+    {
+        "name": "Honda RC1000V- Supersports Bike",
+        "sl":28,
+        "quantity": "20",
+        "price": "475,950 BDT",
+        "supplier": "Wuxi Stanford Vehicle Tech Co. Ltd.",
+        "description": "The best-in-class power from a 160cc Twin Spark DTS-i engine, with twin disc brakes, wider wheels & quick single channel  that make challenges to go fast.",
+        "img": "https://i.ibb.co/BV9G8gH/8.jpg"
+    },
+    {
+        "name": "Honda GSX-R150 Twin Disc",
+        "sl":29,
+        "quantity": "12",
+        "price": "495,950 BDT",
+        "supplier": "Bajaj Auto Ltd.",
+        "description": "The best-in-class power from a 160cc Twin Spark DTS-i engine, with twin disc brakes, wider wheels & quick single channel  that make challenges to go fast.",
+        "img": "https://i.ibb.co/DLSZ8Xt/9.jpg"
+    },
+    {
+        "name": "Ducati's Panigale V2",
+        "sl":30,
+        "quantity": "10",
+        "price": "425,950 BDT",
+        "supplier": "Wuxi Stanford Vehicle Tech Co. Ltd.",
+        "description": "The best-in-class power from a 160cc Twin Spark DTS-i engine, with twin disc brakes, wider wheels & quick single channel  that make challenges to go fast.",
+        "img": "https://i.ibb.co/hKXngGG/10.jpg"
+    },
+    {
+        "name": "Honda GSX-R150 Twin Disc",
+        "sl":31,
+        "quantity": "12",
+        "price": "495,950 BDT",
+        "supplier": "Bajaj Auto Ltd.",
+        "description": "The best-in-class power from a 160cc Twin Spark DTS-i engine, with twin disc brakes, wider wheels & quick single channel  that make challenges to go fast.",
+        "img": "https://i.ibb.co/DLSZ8Xt/9.jpg"
+    },
+    {
+        "name": "Ducati's Panigale V2",
+        "sl":32,
         "quantity": "10",
         "price": "425,950 BDT",
         "supplier": "Wuxi Stanford Vehicle Tech Co. Ltd.",

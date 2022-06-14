@@ -7,7 +7,7 @@ const Items = ({ homePage }) => {
     
     return (
         <div className='container'>
-            <h1 className='product-title text-secondary text-center mt-3'>Our Items</h1>
+            <h1 className='text-secondary text-center'>Inventory</h1>
             <div className="product-container">
                 {
                     items.map(item => <Item
