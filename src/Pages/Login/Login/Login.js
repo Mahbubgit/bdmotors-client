@@ -4,18 +4,22 @@ import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
 import { useRef } from 'react';
 import './Login.css';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import SocialLogin from './../SocialLogin/SocialLogin';
 import { useSendPasswordResetEmail, useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import auth from '../../../firebase.init';
 import { toast } from 'react-toastify';
+import Loading from '../../Shared/Loading/Loading';
 // import PageTitle from '../../Shared/PageTitle/PageTitle';
 
 const Login = () => {
+
     const emailRef = useRef('');
     const passwordRef = useRef('');
     const navigate = useNavigate();
 
+    const location = useLocation();
+    let from = location?.state?.from?.pathname || "/";
 
     const [
         signInWithEmailAndPassword,
@@ -23,17 +27,28 @@ const Login = () => {
         loading,
         error,
     ] = useSignInWithEmailAndPassword(auth);
+    
     const [sendPasswordResetEmail, sending] = useSendPasswordResetEmail(auth);
 
 
     const navigateToSignUp = event => {
-        navigate('./signup');
+        // navigate('./signup');
+        navigate(from, { replace: true });
     }
+
+    if(loading || sending){
+        return <Loading></Loading>
+    }
+
+    if (user) {
+        navigate(from, { replace: true });
+        // navigate('/home');
+    }
+
     const handleSubmit = async event => {
         event.preventDefault();
         const email = emailRef.current.value;
         const password = passwordRef.current.value;
-
         await signInWithEmailAndPassword(email, password);
     }
 

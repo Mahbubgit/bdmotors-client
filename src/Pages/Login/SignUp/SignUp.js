@@ -1,7 +1,6 @@
 import React, { useRef } from 'react';
 import { Button, Form } from 'react-bootstrap';
 import { Link, useNavigate } from 'react-router-dom';
-// import './SignUp.css';
 import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import auth from '../../../firebase.init';
 import SocialLogin from '../SocialLogin/SocialLogin';
@@ -54,7 +53,6 @@ const SignUp = () => {
         <div className='container w-50 mx-auto loginArea'>
 
             <Form onSubmit={handleSignUp} className='loginForm'>
-                {/* <h2 className='text-secondary text-center'>Join to</h2> */}
                 <p className='h2 mb-0 text-center text-secondary mb-2'>Join to <span className='title-green'>BD</span><span className='title-red'>MOTORS </span></p>
 
                 <Row className="mb-3">

@@ -31,15 +31,16 @@ function App() {
         <Route path='/featuredProduct' element={<FeatureProducts></FeatureProducts>}></Route>
         <Route path='/login' element={<Login></Login>}></Route>
         <Route path='/signup' element={<SignUp></SignUp>}></Route>
-        <Route path='/inventory/:id' element={<ItemDetail></ItemDetail>}></Route>
         <Route path='/blogs' element={<Blogs></Blogs>}></Route>
         <Route path='/items' element={<Items></Items>}></Route>
         <Route path='/products' element={<Products></Products>}></Route>
-        {/* <Route path='/item/:id' element={
+        {/* <Route path='/inventory/:id' element={<ItemDetail></ItemDetail>}></Route> */}
+
+        <Route path='/inventory/:id' element={
           <RequireAuth>
             <ItemDetail></ItemDetail>
           </RequireAuth>
-        }></Route> */}
+        }></Route>
         <Route path='/addItem' element={
           <RequireAuth>
             <AddItem></AddItem>

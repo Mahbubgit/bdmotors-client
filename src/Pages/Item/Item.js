@@ -1,10 +1,10 @@
 import React from 'react';
 import './Item.css';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 const Item = ({ item, homePage }) => {
     const { _id, name, sl, price, quantity, supplier, description, img } = item;
-    
+
     const navigate = useNavigate();
 
     const navigateToItemDetail = id => {
@@ -26,14 +26,19 @@ const Item = ({ item, homePage }) => {
                             <small>{description}</small>
                         </p>
                     </div>
-                    <div className='product-button'>
+                    {/* <div className='product-button'>
                         <button onClick={() => navigateToItemDetail(_id)} className='btn btn-secondary'>Update Stock</button>
-                    </div>
+                    </div> */}
+
+                    <Link to={`/inventory/${_id}`}>
+                        <button onClick={() => navigateToItemDetail(_id)} className='btn btn-secondary mx-auto'>Update Stock</button>
+                    </Link>
+
                 </div>
             );
         }
     }
-    
+
 };
 
 export default Item;

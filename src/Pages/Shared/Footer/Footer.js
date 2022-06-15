@@ -107,9 +107,6 @@ const Footer = () => {
                                     <li>
                                         <a href="/featuredProduct" className='text-decoration-none text-white'>Featured Product</a>
                                     </li>
-                                    <li>
-                                        <a href="/about" className='text-decoration-none text-white'>About</a>
-                                    </li>
                                 </ul>
                             </div>
                             {/* <!--Grid column--> */}

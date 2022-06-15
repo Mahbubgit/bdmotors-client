@@ -23,25 +23,39 @@
 
 /* make products responsive */
 @media only screen and (max-width:576px) {
+    .navMenu{
+        height: 100px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 2px;
+    }
+
     .navMenu a{
         float: left;
         display: block;
         text-align: center;
         padding: 2px 10px;
         border-radius: 5px;
-        margin: 5px;
-        width: 200px;
+        margin: 2px 5px;
+        width: 225px;
     }
 }
 
 @media only screen and (min-width: 577px) and (max-width: 992px) {
+    .navMenu{
+        height: 100px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 2px;
+    }
+
     .navMenu a{
         float: left;
         display: block;
         text-align: center;
         padding: 2px 10px;
         border-radius: 5px;
-        margin: 5px 10px;
-        width: 200px;
+        margin: 2px 5px;
+        width: 230px;
     }
 } 

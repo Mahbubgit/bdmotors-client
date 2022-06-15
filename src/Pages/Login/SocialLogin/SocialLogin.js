@@ -2,12 +2,15 @@ import React from 'react';
 import googleImg from '../../../Images/socialImage/google.png';
 import { useSignInWithGoogle } from 'react-firebase-hooks/auth';
 import auth from '../../../firebase.init';
-import { useNavigate } from 'react-router-dom';
+import { useLocation, useNavigate } from 'react-router-dom';
 import Loading from '../../Shared/Loading/Loading';
 
 const SocialLogin = () => {
     const [signInWithGoogle, user, loading, error] = useSignInWithGoogle(auth);
     const navigate = useNavigate();
+    
+    const location = useLocation();
+    let from = location?.state?.from?.pathname || "/";
 
     let errorElement;
     if (error) {
@@ -18,7 +21,7 @@ const SocialLogin = () => {
     }
 
     if (user) {
-        navigate('/home');
+        navigate(from, { replace: true });
     }
 
     return (
@@ -32,7 +35,7 @@ const SocialLogin = () => {
             <div className='d-flex gap-3 mb-2'>
                 <button
                     onClick={() => signInWithGoogle()}
-                    className='btn btn-secondary w-50 d-flex mx-auto my-auto'>
+                    className='btn btn-secondary d-flex mx-auto my-auto w-100'>
                     <div className='mx-auto d-flex'>
                         <img className='ms-auto' style={{ width: "30px", height: "30px" }} src={googleImg} alt="" />
                         <span className='mx-1'>Sign in with Google</span>

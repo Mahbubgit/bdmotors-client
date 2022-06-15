@@ -1,15 +1,15 @@
 import { useEffect, useState } from "react"
 
-const useItemDetail = itemId =>{
+const useItemDetail = id =>{
     const [item, setItem] = useState([]);
     useEffect(() =>{
-        const url = `http://localhost:3000/item/${itemId}`;
+        const url = `http://localhost:5000/product/${id}`;
         fetch(url)
         .then(res => res.json())
         .then(data => setItem(data));
-    }, [itemId]);
+    }, [id]);
     
-    return [item];
+    return [item]
 }
 
 export default useItemDetail;
