@@ -1,4 +1,7 @@
 .gallery{
     margin: 20px auto;
-    width: 75%;
+    width: 100%;
+}
+.gallery-title{
+    text-align: center;
 }

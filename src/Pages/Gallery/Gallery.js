@@ -5,7 +5,7 @@ import './Gallery.css';
 const Gallery = () => {
     return (
         <div className='gallery'>
-            <h1 className='product-title text-secondary'>Gallery</h1>
+            <h1 className='text-secondary gallery-title'>Gallery</h1>
             <div className='w-75 mx-auto mb-3 mt-3'>
                 <Carousel fade>
                     <Carousel.Item>

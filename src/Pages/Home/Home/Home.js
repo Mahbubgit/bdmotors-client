@@ -14,14 +14,14 @@ const Home = () => {
         <Items
           homePage={homePage}
         ></Items>
-        <a className='btn btn-secondary' href="/products">Manage Inventory</a>
+        <a className='btn btn-secondary home-btn' href="/products">Manage Inventory</a>
       </div>
 
       <div className='mt-3'>
         <FeatureProducts
           homePage={homePage}
         ></FeatureProducts>
-        <a className='btn btn-secondary' href="/featuredProduct">Show All Featured Products</a>
+        <a className='btn btn-secondary home-btn' href="/featuredProduct">Show All Featured Products</a>
       </div>
       <div className='w-75 mx-auto mb-3'>
         <Gallery></Gallery>

@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 // import useItems from '../../hooks/useItems';
 import Product from '../Product/Product';
 import './Products.css';
@@ -6,6 +7,7 @@ import './Products.css';
 const Products = () => {
     // const [items] = useItems();
     const [pageCount, setPageCount] = useState(0);
+    const navigate = useNavigate()
 
     const [selectedPage, setSelectedPage] = useState(0);
     const [pageLoadSize, setPageLoadSize] = useState(10);
@@ -30,10 +32,16 @@ const Products = () => {
             })
     }, [])
 
+    const handleAddItem = () =>{
+        navigate('/addItem');
+    }
     return (
         <div>
             <div>
-                <h1 className='text-secondary text-center'>Inventory</h1>
+                <p className='h1 text-secondary text-center'>Inventory
+                <button className='btn btn-secondary ms-5' onClick={handleAddItem}>Add New Item</button>
+                </p>
+
                 <div className="product-container">
                     {
                         items.map(product => <Product

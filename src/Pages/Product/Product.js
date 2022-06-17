@@ -16,7 +16,7 @@ const Product = ({product}) => {
                     <h2>{name}</h2>
                     <h4>Supplier: {supplier}</h4>
                     <p>
-                        Quantity:{quantity} <br />
+                        Quantity: {quantity} <br />
                         Price: {price} <br />
                         <small>{description}</small>
                     </p>
