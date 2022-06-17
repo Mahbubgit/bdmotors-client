@@ -3,39 +3,31 @@ import './Item.css';
 import { Link, useNavigate } from 'react-router-dom';
 
 const Item = ({ item, homePage }) => {
-    const { _id, name, sl, price, quantity, supplier, description, img } = item;
+    const { _id, name, price, quantity, supplier, description, img } = item;
 
     const navigate = useNavigate();
-
     const navigateToItemDetail = id => {
         navigate(`/inventory/${id}`);
     }
+    return (
+        <div className='product'>
+            <div className='product-details'>
+                <img className='image' src={img} alt="" width={300} />
+                <h2>{name}</h2>
+                <h4>Supplier: {supplier}</h4>
+                <p>
+                    Quantity:{quantity} <br />
+                    Price: {price} <br />
+                    <small>{description}</small>
+                </p>
+            </div>
 
-    // show 6 items for home page
-    if (homePage) {
-        if (sl <= 6) {
-            return (
-                <div className='product'>
-                    <div className='product-details'>
-                        <img className='image' src={img} alt="" width={300} />
-                        <h2>{name}</h2>
-                        <h4>Supplier: {supplier}</h4>
-                        <p>
-                            Quantity:{quantity} <br />
-                            Price: {price} <br />
-                            <small>{description}</small>
-                        </p>
-                    </div>
+            <Link to={`/inventory/${_id}`}>
+                <button onClick={() => navigateToItemDetail(_id)} className='btn btn-secondary mx-auto'>Update Stock</button>
+            </Link>
 
-                    <Link to={`/inventory/${_id}`}>
-                        <button onClick={() => navigateToItemDetail(_id)} className='btn btn-secondary mx-auto'>Update Stock</button>
-                    </Link>
-
-                </div>
-            );
-        }
-    }
-
+        </div>
+    );
 };
 
 export default Item;

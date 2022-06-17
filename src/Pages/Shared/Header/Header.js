@@ -37,7 +37,7 @@ const Header = () => {
                         {
                             user ?
                                 <>
-                                    <CustomLink to={'/products'}>MANAGE INVENTORIES</CustomLink>
+                                    <CustomLink to={'/products'}>MANAGE INVENTORY</CustomLink>
                                     <CustomLink to={'/addItem'}>ADD ITEM</CustomLink>
                                     <CustomLink to={'/myItem'}>MY ITEM</CustomLink>
                                     <CustomLink to={'/login'} className='bg-danger text-white' onClick={handleLogOut} >LOG OUT</CustomLink>

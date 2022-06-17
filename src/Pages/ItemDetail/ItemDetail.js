@@ -4,7 +4,10 @@ import { Accordion, Button, Form } from 'react-bootstrap';
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
 import './ItemDetail.css';
-import { toast } from 'react-toastify';
+// import { toast } from 'react-toastify';
+import { toast, ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 import axios from 'axios';
 import useItemDetail from '../../hooks/useItemDetail';
 
@@ -19,9 +22,8 @@ const ItemDetail = () => {
         }
         axios.post(`http://localhost:5000/inventory/${id}`, itemDelivered)
             .then(response => {
-                // console.log(response);
                 const { data } = response;
-                console.log(data.modifiedCount);
+                // console.log(data.modifiedCount);
                 if (data.modifiedCount) {
                     toast('Inventory stock is updated');
                     event.target.reset();
@@ -36,9 +38,9 @@ const ItemDetail = () => {
         axios.post(`http://localhost:5000/inventory/${id}?restockQuantity=${restockQuantity}`)
             .then(response => {
                 const { data } = response;
-                console.log(data);
+                // console.log(data);
                 if (data.modifiedCount) {
-                    toast(`Item restock of item: ${item.name}`);
+                    toast(`Restock of item: ${item.name}`);
                     event.target.reset();
                 }
             })
@@ -105,7 +107,7 @@ const ItemDetail = () => {
                             <Button className='btn btn-secondary mb-3 d-block' variant="secondary w-50 mx-auto" type="submit">
                                 Delivered
                             </Button>
-
+                            <ToastContainer></ToastContainer>
                         </Form>
                     </Accordion.Body>
                 </Accordion.Item>
@@ -140,11 +142,13 @@ const ItemDetail = () => {
                             <Button className='btn btn-secondary mb-3 d-block' variant="secondary w-50 mx-auto" type="submit">
                                 Restock Item Quantity
                             </Button>
+                            <ToastContainer></ToastContainer>
                         </Form>
                     </Accordion.Body>
                 </Accordion.Item>
             </Accordion>
 
+            <a className='btn btn-secondary home-btn mt-3 mb-3' href="/products">Manage Inventories</a>
         </div>
     );
 };

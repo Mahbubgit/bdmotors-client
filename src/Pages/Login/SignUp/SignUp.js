@@ -7,6 +7,8 @@ import SocialLogin from '../SocialLogin/SocialLogin';
 import Loading from '../../Shared/Loading/Loading';
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
+import { toast, ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const SignUp = () => {
 
@@ -23,12 +25,14 @@ const SignUp = () => {
     const passwordRef = useRef('');
     const confirmPasswordRef = useRef('');
     const navigate = useNavigate();
-    let errorElement;
-    if (error) {
-        errorElement = <p className='text-danger'>Error: {error?.message}</p>
-    }
+    let errorMessage;
+
     if (loading) {
         return <Loading></Loading>
+    }
+
+    if (error) {
+        errorMessage = <p className='text-danger'>Error: {error?.message}</p>
     }
     const navigateLogin = () => {
         navigate('/login');
@@ -45,8 +49,8 @@ const SignUp = () => {
             navigate('/home');
         }
         else {
-            errorElement = <p className='text-danger'>Error: Password and Confirm Password should be same.</p>
-            // errorElement = errorElement.props.children;
+            errorMessage = <p className='text-danger'>Error: Password and Confirm Password should be same.</p>
+            toast('Password and Confirm Password should be same.');
         }
     }
     return (
@@ -55,32 +59,34 @@ const SignUp = () => {
             <Form onSubmit={handleSignUp} className='loginForm'>
                 <p className='h2 mb-0 text-center text-secondary mb-2'>Join to <span className='title-green'>BD</span><span className='title-red'>MOTORS </span></p>
 
-                <Row className="mb-3">
+                <Row className="mb-3 w-75">
                     <Form.Group as={Col} controlId="formBasicName">
                         <Form.Control ref={nameRef} type="text" placeholder="Your Name" />
                     </Form.Group>
                 </Row>
-                <Row className="mb-3">
+                <Row className="mb-3 w-75">
                     <Form.Group as={Col} controlId="formBasicEmail">
                         <Form.Control ref={emailRef} type="email" placeholder="Your Email" required />
                     </Form.Group>
                 </Row>
-                <Row className="mb-3">
+                <Row className="mb-3 w-75">
                     <Form.Group as={Col} controlId="formBasicPassword">
                         <Form.Control ref={passwordRef} type="password" placeholder="Password" required />
                     </Form.Group>
                 </Row>
-                <Row className="mb-3">
+                <Row className="mb-3 w-75">
                     <Form.Group as={Col} controlId="formBasicConfirmPassword">
                         <Form.Control ref={confirmPasswordRef} type="password" placeholder="Confirm Password" required />
                     </Form.Group>
                 </Row>
 
-                <Button variant="secondary w-50 mx-auto" type="submit">
+                <Button variant="secondary w-50 home-btn" type="submit">
                     Sign Up
                 </Button>
+                <ToastContainer></ToastContainer>
             </Form>
-            {/* {errorElement} */}
+            <p className='text-center mb-0 h5'>{errorMessage}</p>
+            
             <p className='text-center mb-0'>
             Have an account already?
                 <Link to={'/login'} className='text-primary pe-auto text-decoration-none ms-2' onClick={navigateLogin}>Log in</Link>

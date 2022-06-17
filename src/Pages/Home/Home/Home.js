@@ -14,7 +14,7 @@ const Home = () => {
         <Items
           homePage={homePage}
         ></Items>
-        <a className='btn btn-secondary home-btn' href="/products">Manage Inventory</a>
+        <a className='btn btn-secondary home-btn' href="/products">Manage Inventories</a>
       </div>
 
       <div className='mt-3'>
