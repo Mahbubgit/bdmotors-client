@@ -6,9 +6,9 @@ import './Products.css';
 
 const Products = () => {
     // const [items] = useItems();
-    const [pageCount, setPageCount] = useState(0);
     const navigate = useNavigate()
-
+    
+    const [pageCount, setPageCount] = useState(0);
     const [selectedPage, setSelectedPage] = useState(0);
     const [pageLoadSize, setPageLoadSize] = useState(10);
 
@@ -19,7 +19,7 @@ const Products = () => {
         fetch(`http://localhost:5000/product?selectedPage=${selectedPage}&pageLoadSize=${pageLoadSize}`)
             .then(res => res.json())
             .then(data => setItems(data));
-    }, [selectedPage,pageLoadSize]);
+    }, [selectedPage, pageLoadSize]);
 
 
     useEffect(() => {
@@ -32,14 +32,14 @@ const Products = () => {
             })
     }, [])
 
-    const handleAddItem = () =>{
+    const handleAddItem = () => {
         navigate('/addItem');
     }
     return (
         <div>
             <div>
                 <p className='h1 text-secondary text-center'>Inventory
-                <button className='btn btn-secondary ms-5' onClick={handleAddItem}>Add New Item</button>
+                    <button className='btn btn-secondary ms-5' onClick={handleAddItem}>Add New Item</button>
                 </p>
 
                 <div className="product-container">
@@ -51,7 +51,7 @@ const Products = () => {
                     }
                 </div>
             </div>
-
+            {/* for pagination */}
             <div className='pagination'>
                 {
                     [...Array(pageCount).keys()]

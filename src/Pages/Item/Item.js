@@ -26,9 +26,6 @@ const Item = ({ item, homePage }) => {
                             <small>{description}</small>
                         </p>
                     </div>
-                    {/* <div className='product-button'>
-                        <button onClick={() => navigateToItemDetail(_id)} className='btn btn-secondary'>Update Stock</button>
-                    </div> */}
 
                     <Link to={`/inventory/${_id}`}>
                         <button onClick={() => navigateToItemDetail(_id)} className='btn btn-secondary mx-auto'>Update Stock</button>

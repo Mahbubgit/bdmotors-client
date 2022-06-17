@@ -46,7 +46,7 @@ const SignUp = () => {
         }
         else {
             errorElement = <p className='text-danger'>Error: Password and Confirm Password should be same.</p>
-            errorElement = errorElement.props.children;
+            // errorElement = errorElement.props.children;
         }
     }
     return (
