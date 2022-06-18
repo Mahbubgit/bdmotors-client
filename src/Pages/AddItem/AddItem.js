@@ -1,10 +1,13 @@
 import axios from 'axios';
 import React, { useRef } from 'react';
 import { Button, Col, Form, Row } from 'react-bootstrap';
+import { useAuthState } from 'react-firebase-hooks/auth';
 import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import auth from '../../firebase.init';
 
 const AddItem = () => {
+    const [user] = useAuthState(auth);
 
     const nameRef = useRef('');
     const descriptionRef = useRef('');
@@ -16,6 +19,7 @@ const AddItem = () => {
     const handleAddNewItem = event => {
         event.preventDefault();
         const itemAdded = {
+            email: user.email,
             name: event.target.formBasicProductName.value,
             description: event.target.formBasicDescription.value,
             price: event.target.formBasicPrice.value,
@@ -23,7 +27,7 @@ const AddItem = () => {
             supplier: event.target.formBasicSupplier.value,
             img: event.target.formBasicImage.value
         }
-        axios.post(`http://localhost:5000/product/addItem`, itemAdded)
+        axios.post(`http://localhost:5000/product`, itemAdded)
             .then(response => {
                 const { data } = response;
                 console.log(data);

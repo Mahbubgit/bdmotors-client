@@ -11,6 +11,8 @@ import auth from '../../../firebase.init';
 import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import Loading from '../../Shared/Loading/Loading';
+import useToken from '../../../hooks/useToken';
+import axios from 'axios';
 // import PageTitle from '../../Shared/PageTitle/PageTitle';
 
 const Login = () => {
@@ -28,22 +30,27 @@ const Login = () => {
         loading,
         error,
     ] = useSignInWithEmailAndPassword(auth);
-    
+
     const [sendPasswordResetEmail, sending] = useSendPasswordResetEmail(auth);
 
+    const [token] = useToken(user);
 
     const navigateToSignUp = event => {
         // navigate('/signup');
         navigate(from, { replace: true });
     }
 
-    if(loading || sending){
+    if (loading || sending) {
         return <Loading></Loading>
     }
 
     if (error) {
         errorMessage = <p className='text-danger'>Error: {error?.message}</p>
     }
+
+    // if (token) {
+    //     navigate(from, { replace: true });
+    // }
 
     if (user) {
         navigate(from, { replace: true });
@@ -53,6 +60,7 @@ const Login = () => {
         event.preventDefault();
         const email = emailRef.current.value;
         const password = passwordRef.current.value;
+
         await signInWithEmailAndPassword(email, password);
     }
 
