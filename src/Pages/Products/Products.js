@@ -16,14 +16,14 @@ const Products = () => {
 
     useEffect(() => {
         // fetch('items.json')
-        fetch(`http://localhost:5000/product?selectedPage=${selectedPage}&pageLoadSize=${pageLoadSize}`)
+        fetch(`https://young-caverns-50549.herokuapp.com/product?selectedPage=${selectedPage}&pageLoadSize=${pageLoadSize}`)
             .then(res => res.json())
             .then(data => setItems(data));
     }, [selectedPage, pageLoadSize]);
 
 
     useEffect(() => {
-        fetch('http://localhost:5000/productCount')
+        fetch('https://young-caverns-50549.herokuapp.com/productCount')
             .then(res => res.json())
             .then(data => {
                 const count = data.count;

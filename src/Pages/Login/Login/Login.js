@@ -11,7 +11,7 @@ import auth from '../../../firebase.init';
 import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import Loading from '../../Shared/Loading/Loading';
-import useToken from '../../../hooks/useToken';
+// import useToken from '../../../hooks/useToken';
 import axios from 'axios';
 // import PageTitle from '../../Shared/PageTitle/PageTitle';
 
@@ -33,7 +33,7 @@ const Login = () => {
 
     const [sendPasswordResetEmail, sending] = useSendPasswordResetEmail(auth);
 
-    const [token] = useToken(user);
+    // const [token] = useToken(user);
 
     const navigateToSignUp = event => {
         // navigate('/signup');
@@ -53,7 +53,7 @@ const Login = () => {
     // }
 
     if (user) {
-        navigate(from, { replace: true });
+        // navigate(from, { replace: true });
     }
 
     const handleSubmit = async event => {
@@ -62,6 +62,12 @@ const Login = () => {
         const password = passwordRef.current.value;
 
         await signInWithEmailAndPassword(email, password);
+
+        // to create Access Token
+        const {data} =await axios.post('https://young-caverns-50549.herokuapp.com/login', {email});
+        console.log(data);
+        localStorage.setItem('accessToken', data.accessToken);
+        navigate(from, { replace: true });
     }
 
     const resetPassword = async () => {

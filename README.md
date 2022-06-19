@@ -1,70 +1,49 @@
-# Getting Started with Create React App
+# BDMOTORS
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### Project Link
+ [BDMOTORS, The biggest Motor Bike warehouse in Bangladesh](https://bdmotors-aeadc.web.app)
 
-## Available Scripts
+## Description
 
-In the project directory, you can run:
+Welcome to BDMOTORS, the biggest motor bike warehouse in Bangladesh! This is a website of Motor Bike Warehouse where world class famous Motor Bikes are stored. You can visit our website and choose your better one from here. Some features are described bellow about the website:
 
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<ul>
+    <li>
+        Header menu contains Home, Gallery, Blogs, Featured Product and Login menu.
+    </li>
+    <li>
+        After successful login, you can view 4 more header menu. These are: Manage Inventory, Add Item, My Item and Log Out.
+    </li>
+    <li>
+        Home page displays a beautiful dynamic banner section, inventory section (6 photos of motor bike details which is the main feature of this website), Featured Product Section (3 photos of featured products included), Gallery section and a footer.
+    </li>
+    <li>
+        Gallery page is related to various types of motor bike photo gallery.
+    </li>
+    <li>
+        Blogs page contains 4 questions and their answers.
+    </li>
+    <li>
+        Featured Product page contains 8 types of featured product photos related to motor bike.
+    </li>
+    <li>
+        Manage Inventory page shows all inventory items with name, supplier name, stock quantity, price and short description. Also there have 2 buttons. One of them is 'Update Stock' and the other one is 'Delete Item'. 'Update Stock' button is used to update item stock quantity increase or decrease. 'Delete Item' button is used to delete the item from inventory permanently. Also there has a pagination section below the page.
+    </li>
+    <li>
+        Add Item page is used to add a new item in the Inventory. Here you have to provide Product Name, Product Description, Product Price, Stock Quantity, Supplier Name and photo url as the image text.
+    </li>
+    <li>
+        My Item page is used to show all items which are added by me. Here has also a delete button to delete the item from inventory permanently.
+    </li>
+    <li>
+        Login page for authorized user who want to manage inventory, add new item, view his/her added item, delete an item and also update item stock.</br>
+        There is a Sign up link to sign up/register a user for this site. </br>
+        Also there is a Reset Password link to reset the password by email when an authorize user forget his/her password.
+    </li>
+    <li>
+        User can also login by social login features like google login to access to the website.
+    </li>
+    <li>
+        This site is build using React Bootstrap, Firebase Authentication, React Firebase Hooks and MongoDB as database.
+    </li>
+</ul>

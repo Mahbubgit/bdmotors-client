@@ -15,7 +15,7 @@ const Product = ({ product }) => {
     const handleDeleteItem = id => {
         const deleteConfirm = window.confirm('Are you sure to delete?');
         if (deleteConfirm) {
-            const url = `http://localhost:5000/inventory/${id}`;
+            const url = `https://young-caverns-50549.herokuapp.com/inventory/${id}`;
             fetch(url, {
                 method: 'DELETE'
             })

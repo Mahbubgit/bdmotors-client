@@ -5,7 +5,7 @@ import './Items.css';
 const Items = ({ homePage }) => {
     const [items, setItems] = useState([]);
     useEffect(() => {
-        fetch('http://localhost:5000/product/home')
+        fetch('https://young-caverns-50549.herokuapp.com/product/home')
             .then(res => res.json())
             .then(data => setItems(data));
     }, []);

@@ -5,7 +5,7 @@ const FeatureProducts = ({ homePage }) => {
     const [featureProduct, setFeatureProduct] = useState([]);
     useEffect(() => {
         // fetch('featureProduct.json')
-        fetch('http://localhost:5000/featureProduct')
+        fetch('https://young-caverns-50549.herokuapp.com/featureProduct')
             .then(res => res.json())
             .then(data => setFeatureProduct(data));
     }, [])

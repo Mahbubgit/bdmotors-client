@@ -27,7 +27,7 @@ const AddItem = () => {
             supplier: event.target.formBasicSupplier.value,
             img: event.target.formBasicImage.value
         }
-        axios.post(`http://localhost:5000/product`, itemAdded)
+        axios.post(`https://young-caverns-50549.herokuapp.com/product`, itemAdded)
             .then(response => {
                 const { data } = response;
                 console.log(data);

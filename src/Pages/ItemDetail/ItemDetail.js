@@ -20,7 +20,7 @@ const ItemDetail = () => {
         const itemDelivered = {
             _id: item._id
         }
-        axios.post(`http://localhost:5000/inventory/${id}`, itemDelivered)
+        axios.post(`https://young-caverns-50549.herokuapp.com/inventory/${id}`, itemDelivered)
             .then(response => {
                 const { data } = response;
                 // console.log(data.modifiedCount);
@@ -35,7 +35,7 @@ const ItemDetail = () => {
     const handleRestock = event => {
         event.preventDefault();
         const restockQuantity = event.target.formBasicRestock.value;
-        axios.post(`http://localhost:5000/inventory/${id}?restockQuantity=${restockQuantity}`)
+        axios.post(`https://young-caverns-50549.herokuapp.com/inventory/${id}?restockQuantity=${restockQuantity}`)
             .then(response => {
                 const { data } = response;
                 // console.log(data);

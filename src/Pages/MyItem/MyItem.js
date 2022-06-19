@@ -4,23 +4,21 @@ import { useEffect } from 'react';
 import { useAuthState } from 'react-firebase-hooks/auth';
 import { useNavigate } from 'react-router-dom';
 import auth from '../../firebase.init';
-import axiosPrivate from '../api/axiosPrivate';
-import { toast, ToastContainer } from 'react-toastify';
+import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-// import axios from 'axios';
+import axiosPrivate from '../../api/axiosPrivate';
 
 const MyItem = () => {
     const [user] = useAuthState(auth);
     const [myItems, setMyItems] = useState([]);
     const navigate = useNavigate();
-    
+
     useEffect(() => {
         const getMyItems = async () => {
             const email = user?.email;
-            const url = `http://localhost:5000/product/myItem?email=${email}`;
+            const url = `https://young-caverns-50549.herokuapp.com/product/myItem?email=${email}`;
             try {
                 const { data } = await axiosPrivate.get(url);
-                // const { data } = await axios.get(url);
                 setMyItems(data);
             }
             catch (error) {
@@ -34,9 +32,10 @@ const MyItem = () => {
         getMyItems();
     }, [user])
 
+    // using fetch
     // useEffect(() => {
     //     const email = user?.email;
-    //     const url = `http://localhost:5000/product/myItem?email=${email}`;
+    //     const url = `https://young-caverns-50549.herokuapp.com/product/myItem?email=${email}`;
     //     fetch(url)
     //         .then(res => res.json())
     //         .then(data => setMyItems(data));
@@ -45,7 +44,7 @@ const MyItem = () => {
     const handleDeleteItem = id => {
         const deleteConfirm = window.confirm('Are you sure to delete?');
         if (deleteConfirm) {
-            const url = `http://localhost:5000/inventory/${id}`;
+            const url = `https://young-caverns-50549.herokuapp.com/inventory/${id}`;
             fetch(url, {
                 method: 'DELETE'
             })
@@ -59,8 +58,8 @@ const MyItem = () => {
     }
 
     return (
-        <div className='w-50 mx-auto'>
-            <h2>My Added Item List. Creator: {user.email}[{myItems.length}]</h2>
+        <div className='w-50 mx-auto mb-3'>
+            <h3 className='mt-3 mb-3 text-center'>My Added Items. [Creator: {user.email}, Total: {myItems.length}]</h3>
             {
                 myItems.map(item => <div>
                     <table>
@@ -79,7 +78,7 @@ const MyItem = () => {
                             <td>{item.price}</td>
                             <td><img src={item.img} alt="" /></td>
                             <td><button onClick={() => handleDeleteItem(item._id)} className='btn btn-danger mx-auto'>Delete X</button></td>
-                            <ToastContainer></ToastContainer>
+                            
                         </tr>
                     </table>
                 </div>)
