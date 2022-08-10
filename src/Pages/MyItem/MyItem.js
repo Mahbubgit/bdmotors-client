@@ -32,7 +32,7 @@ const MyItem = () => {
         getMyItems();
     }, [user])
 
-    // using fetch
+    // using fetch test
     // useEffect(() => {
     //     const email = user?.email;
     //     const url = `https://young-caverns-50549.herokuapp.com/product/myItem?email=${email}`;
